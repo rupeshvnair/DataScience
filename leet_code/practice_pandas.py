@@ -21,7 +21,8 @@ def getDataframeSize(players: pd.DataFrame) -> List[int]:
 #or- Best solution
 def getDataframeSize_best(players: pd.DataFrame) -> List[int]:
     row,col = players.shape
-    return [row,col]
+    new_name = 'rupesh'
+    return [row,col,new_name]
 
 #3.get the first 3 rows
 from pandas import DataFrame
