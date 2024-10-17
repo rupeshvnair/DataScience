@@ -1,30 +1,38 @@
-#learning pandas session in leet
-#1. create dataframe from a list
-#link - https://leetcode.com/problems/create-a-dataframe-from-list/description/?envType=study-plan-v2&envId=introduction-to-pandas&lang=pythondata
+# learning pandas session in leet
+# 1. create dataframe from a list
+# link - https://leetcode.com/problems/create-a-dataframe-from-list/description/?envType=study-plan-v2&envId=introduction-to-pandas&lang=pythondata
 import pandas as pd
-student_data= [[1,15],[2,11],[3,11],[4,20]]
+
+student_data = [[1, 15], [2, 11], [3, 11], [4, 20]]
+
 
 def createDataframe(list):
-    return pd.DataFrame(list,columns=['student_id','age'])
+    return pd.DataFrame(list, columns=['student_id', 'age'])
+
 
 print(createDataframe(student_data))
 
-#2.Get the size of a dataframe
+# 2.Get the size of a dataframe
 import pandas as pd
 
 
 def getDataframeSize(players: pd.DataFrame) -> List[int]:
-    x=len(players.columns)
-    y=len(players)
-    return [y,x]
+    x = len(players.columns)
+    y = len(players)
+    return [y, x]
 
-#or- Best solution
+
+# or- Best solution
 def getDataframeSize_best(players: pd.DataFrame) -> List[int]:
-    row,col = players.shape
+    row, col = players.shape
     new_name = 'rupesh'
-    return [row,col,new_name]
+    nw_name = 'rakesn'
+    return [row, col, new_name, nw_name]
 
-#3.get the first 3 rows
+
+# 3.get the first 3 rows
 from pandas import DataFrame
+
+
 def selectFirstRows(employees: DataFrame) -> DataFrame:
     return employees.head(3)
