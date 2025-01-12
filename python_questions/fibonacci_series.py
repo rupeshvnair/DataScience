@@ -17,4 +17,14 @@ def fibonacci_tab(n):
 
 
 # Example Usage
+
+def fib(n):
+    if n<=1:
+        return 0
+    if n==2:
+        return 1
+    val = fib(n-1)+ fib(n-2)
+    return val
+
 print(fibonacci_tab(10))
+print(fib(11))
